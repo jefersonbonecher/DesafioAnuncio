@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * @author user
  */
 public class Relatorios {
-    private ArrayList anuncios = new ArrayList();
+    private ArrayList<CadastroAnuncio> anuncios = new ArrayList();
 
     public void add(CadastroAnuncio anuncio){
            if (anuncio != null){
@@ -25,7 +25,17 @@ public class Relatorios {
             throw new IllegalArgumentException("Ánuncio inválido. Não pode ser nulo.");// tratamento de excesao 
         }
     }
-    
+    public double valorTotalInvestido(){
+       float soma =0;
+        for (CadastroAnuncio ca : this.anuncios) {
+            String clinete= ca.getCliente();
+            if(clinete==clinete){
+                soma+= ca.getInverstimentoDia();
+            }
+            
+        }
+        return soma;
+    }
 
     
 }

@@ -2,7 +2,8 @@
 package Apresentacao;
 
 import Anuncio.CadastroAnuncio;
-import CadastroAnuncio;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -10,7 +11,7 @@ import CadastroAnuncio;
  */
 public class Apresentancao extends javax.swing.JFrame {
 
-    CadastroAnuncio anuncio = CadastroAnuncio();
+    private ArrayList<CadastroAnuncio> anuncios = new ArrayList();
     
     public Apresentancao() {
         initComponents();
@@ -131,7 +132,13 @@ public class Apresentancao extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+     CadastroAnuncio anuncios;
+     // anuncios = new CadastroAnuncio(jTextField1.getText(),
+                                 //    jTextField2.getText(),
+                                 //    jTextField3.getText(),
+                                  // jTextField4.getText(),
+                               //    Integer.parseInt(jTextField5.getText());
+              
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
